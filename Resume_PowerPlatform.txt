@@ -83,7 +83,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{
-\textbf{Dynamics 365 \& Power Platform Developer} with \textbf{2+ years} shipping production \textbf{Power Pages portals, PCF controls, Copilot Studio plugins, and Azure-integrated extensions} for Microsoft internal teams and enterprise customers. Hands-on across \textbf{Dataverse, Power Automate, MSAL/Entra External ID, Microsoft Graph API, and Azure Functions}, with deep front-end expertise in \textbf{React, TypeScript, and .NET Core}. Proven track record of delivering customer-facing D365 sites and reusable Power Platform components.
+\textbf{Dynamics 365 \& Power Platform Developer} with \textbf{2+ years} shipping production \textbf{Power Pages portals, PCF controls, Copilot Studio Agents, D365 Plugins, Power Automate workflows, and .NET Core Web APIs} for Microsoft internal teams and enterprise customers. Hands-on across \textbf{Dataverse, MSAL/Entra External ID, and Azure Functions}, with deep front-end expertise in \textbf{React, TypeScript, and PCF}.
 }
 \vspace{-8pt}
 
@@ -95,21 +95,22 @@
     {GlobalLogic India Pvt Ltd}{Sept 2023 -- Present}
     {Software Engineer -- Dynamics 365 \& Power Platform}{Noida, Uttar Pradesh}
     \resumeItemListStart
-      \resumeItem{Engineered the \textbf{Event Registration Template} for the \textbf{D365 Marketing Event Portal} on \textbf{Power Pages}, shipping reusable UI, internationalization, and web template assets now \textbf{live as a Microsoft Power Pages template}.}
-      \resumeItem{Built and launched a \textbf{Power Pages community landing site} with a custom \textbf{Carousel PCF control}, deployed to production as the official Microsoft Dynamics and Power Platform community hub at \textit{community.microsoftbusinessapps.com}.}
-      \resumeItem{Delivered the \textbf{Kentucky CHFS D365 worker portal} UI from Figma using Power Pages and Liquid templates, \textbf{showcased by Microsoft} in a successful demo to a major prospective customer; also shipped the \textbf{CDPH (California Dept. of Public Health)} portal UI.}
-      \resumeItem{Architected an \textbf{Azure Function} bridging the MDA Release Planner with the \textbf{GitHub API} to auto-generate markdown pull requests, \textbf{significantly cutting PR turnaround time} across internal release workflows.}
-      \resumeItem{Pioneered a \textbf{React-in-Power-Pages rendering pattern} by bundling React builds and embedding the compiled JavaScript into portals, unlocking modern component reuse inside Dataverse-driven sites and accelerating an internal \textbf{Return-to-Office (RTO)} application.}
-      \resumeItem{Prototyped a \textbf{Copilot Studio plugin} integrating \textbf{Microsoft Copilot} with Power Pages for text moderation and relevance, plus a \textbf{PDF Viewer PCF control} for in-portal document rendering.}
-      \resumeItem{Implemented \textbf{MSAL} with \textbf{Entra External ID} and \textbf{Microsoft Graph API} for Azure app discovery, and integrated \textbf{Ping Identity} as an external identity provider for Power Pages authentication flows.}
+      \resumeItem{Revamped the \textbf{Power Platform Admin Center Licensing UI} for Power Apps with the \textbf{Microsoft Engineering team}, surfacing real-time \textbf{license consumption} and a \textbf{12-month CSV export} preventing \textbf{\$1M+ revenue leakage}.}
+      \resumeItem{Engineered the \textbf{Event Registration Template} for the \textbf{D365 Marketing Event Portal}, now \textbf{live as an official Microsoft Power Pages template}; led \textbf{V1$\rightarrow$V2} and \textbf{Bootstrap 3$\rightarrow$5} migrations across legacy portals.}
+      \resumeItem{Launched the \textbf{Power Pages community hub} (\textit{community.microsoftbusinessapps.com}) with a custom \textbf{Carousel PCF}; shipped \textbf{Kentucky CHFS} and \textbf{CDPH} D365 portal UIs, \textbf{showcased by Microsoft} in a winning customer demo.}
+      \resumeItem{Shipped \textbf{PCF controls} -- \textbf{Carousel}, \textbf{Text-to-Speech}, \textbf{RTO Calendar}, \textbf{PDF Viewer}, and a \textbf{Copilot Studio agent control} on the \textbf{Copilot Client SDK} with \textbf{MSAL} auth -- embedded across Power Pages and a customer-facing \textbf{Canvas app}.}
+      \resumeItem{Developed \textbf{C\# .NET Core Web APIs} integrating \textbf{Dataverse}, \textbf{Azure AI Services}, and a \textbf{SQL Data Warehouse} for a custom \textbf{Licensing \& Operations} application.}
+      \resumeItem{Architected an \textbf{Azure Function} bridging the MDA Release Planner with the \textbf{GitHub API} to auto-generate markdown PRs, \textbf{significantly cutting release turnaround time}.}
+      \resumeItem{Automated \textbf{Power Automate} workflows syncing \textbf{Azure DevOps} items with \textbf{Dataverse} rate-card tables and orchestrating the \textbf{Copilot Studio Licensing Rate Card} lifecycle.}
+      \resumeItem{Designed \textbf{Copilot Studio agents} (Sales Insight with Dataverse knowledge, topics, \textbf{RBAC}, \textbf{custom Client ID/Secret} auth) and a \textbf{content moderation \& relevance plugin} invoking Copilot at runtime.}
+      \resumeItem{Built \textbf{MDA} tooling for Microsoft internal teams -- \textbf{validation plugins} for \textbf{Microsoft Fabric} docs review/PR generation, \textbf{RBAC} for Release Planner, and Power Platform Community Site \textbf{Dataverse schema}; integrated \textbf{Entra External ID (MSAL)}, \textbf{Graph API}, and \textbf{Ping Identity} SSO.}
     \resumeItemListEnd
 
   \resumeSubheading
     {GlobalLogic India Pvt Ltd}{Feb 2023 -- June 2023}
     {Software Engineer Trainee}{Noida, Uttar Pradesh}
     \resumeItemListStart
-      \resumeItem{Contributed to front-end development of enterprise Power Platform modules using \textbf{React.js, TypeScript, and ES6+}, following Microsoft Dataverse and Power Pages conventions.}
-      \resumeItem{Participated in UI code reviews and Agile sprints, optimizing component reusability and improving maintainability by 25\% across delivery cycles.}
+      \resumeItem{Contributed to enterprise Power Platform front-end modules using \textbf{React.js}, \textbf{TypeScript}, and ES6+; participated in code reviews and Agile sprints, improving component reusability and maintainability by \textbf{25\%}.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -118,14 +119,6 @@
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-
-  \resumeProjectHeading
-      {\textbf{AM Archives} $|$ \emph{Next.js, TypeScript, ShadCn, Tailwind CSS, Firebase Auth, .NET Core, Vercel}}{{\MYhref[blue]{https://github.com/ShivJ11/am-archives}{Github}}}
-      \resumeItemListStart
-        \resumeItem{Designed a \textbf{dynamic, responsive manga reader} with reusable ShadCn and Tailwind components, achieving a \textbf{98\% Lighthouse performance score} and SSR-driven \textbf{40\% lower Time-to-Interactive}.}
-        \resumeItem{Engineered a secure \textbf{.NET Core data proxy} to interact with the MangaDex API, eliminating CORS issues and centralizing auth.}
-      \resumeItemListEnd
-      \vspace{-13pt}
 
   \resumeProjectHeading
       {\textbf{Utility Bill Payment System} $|$ \emph{React, .NET Core, Bootstrap, SSMS}}{{\MYhref[blue]{https://github.com/ShivJ11/Utility-Bill-Payment-System}{Github}}}
@@ -140,11 +133,10 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-   \textbf{Power Platform \& D365}{: Power Pages, Power Apps, Power Automate, Copilot Studio, Dataverse, PCF Controls, Liquid, Plugins} \\
-   \textbf{Microsoft Cloud}{: Azure Functions, Azure App Services, Microsoft Graph API, Entra External ID (MSAL), Azure DevOps} \\
-   \textbf{Languages}{: TypeScript, JavaScript (ES6+), C\#, HTML5, CSS3} \\
-   \textbf{Frameworks \& Libraries}{: React, Redux, Context API, Next.js, .NET Core, Fluent UI, Tailwind CSS, Bootstrap} \\
-   \textbf{Tools \& Testing}{: Git, GitHub, Visual Studio, VS Code, Vite, Webpack, Jest, React Testing Library, Ping Identity}
+   \textbf{Power Platform \& D365}{: Power Pages, Power Apps (MDA \& Canvas), Power Automate, Copilot Studio, Dataverse, PCF, Liquid, Plugins} \\
+   \textbf{Microsoft Cloud}{: Azure Functions, App Services, Azure AI Services, Graph API, Entra External ID (MSAL), Azure DevOps, SQL Data Warehouse} \\
+   \textbf{Languages \& Frameworks}{: TypeScript, JavaScript (ES6+), C\#, SQL, HTML5, CSS3, React, Redux, Next.js, .NET Core, Fluent UI, Tailwind CSS} \\
+   \textbf{Tools \& Testing}{: Git, GitHub, Visual Studio, VS Code, Vite, Webpack, Jest, React Testing Library, Copilot Client SDK, Ping Identity}
   }}
 \end{itemize}
 \vspace{-15pt}
