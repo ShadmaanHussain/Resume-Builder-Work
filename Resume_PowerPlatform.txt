@@ -1,0 +1,168 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}
+
+%-------------------------------------------
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Shadmaan Hussain} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 8102444245 ~ 
+    \MYhref[blue]{mailto:shd.hussain.dev@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shd.hussain.dev@gmail.com}} ~ 
+    \MYhref[blue]{https://www.linkedin.com/in/shadmaan-hussain-73075719a/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}  ~
+    \MYhref[blue]{https://github.com/ShadmaanHussain}{\raisebox{-0.2\height}\faGithub\ \underline{Github}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{
+\textbf{Dynamics 365 \& Power Platform Developer} with \textbf{2+ years} shipping production \textbf{Power Pages portals, PCF controls, Copilot Studio plugins, and Azure-integrated extensions} for Microsoft internal teams and enterprise customers. Hands-on across \textbf{Dataverse, Power Automate, MSAL/Entra External ID, Microsoft Graph API, and Azure Functions}, with deep front-end expertise in \textbf{React, TypeScript, and .NET Core}. Proven track record of delivering customer-facing D365 sites and reusable Power Platform components.
+}
+\vspace{-8pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {GlobalLogic India Pvt Ltd}{Sept 2023 -- Present}
+    {Software Engineer -- Dynamics 365 \& Power Platform}{Noida, Uttar Pradesh}
+    \resumeItemListStart
+      \resumeItem{Engineered the \textbf{Event Registration Template} for the \textbf{D365 Marketing Event Portal} on \textbf{Power Pages}, shipping reusable UI, internationalization, and web template assets now \textbf{live as a Microsoft Power Pages template}.}
+      \resumeItem{Built and launched a \textbf{Power Pages community landing site} with a custom \textbf{Carousel PCF control}, deployed to production as the official Microsoft Dynamics and Power Platform community hub at \textit{community.microsoftbusinessapps.com}.}
+      \resumeItem{Delivered the \textbf{Kentucky CHFS D365 worker portal} UI from Figma using Power Pages and Liquid templates, \textbf{showcased by Microsoft} in a successful demo to a major prospective customer; also shipped the \textbf{CDPH (California Dept. of Public Health)} portal UI.}
+      \resumeItem{Architected an \textbf{Azure Function} bridging the MDA Release Planner with the \textbf{GitHub API} to auto-generate markdown pull requests, \textbf{significantly cutting PR turnaround time} across internal release workflows.}
+      \resumeItem{Pioneered a \textbf{React-in-Power-Pages rendering pattern} by bundling React builds and embedding the compiled JavaScript into portals, unlocking modern component reuse inside Dataverse-driven sites and accelerating an internal \textbf{Return-to-Office (RTO)} application.}
+      \resumeItem{Prototyped a \textbf{Copilot Studio plugin} integrating \textbf{Microsoft Copilot} with Power Pages for text moderation and relevance, plus a \textbf{PDF Viewer PCF control} for in-portal document rendering.}
+      \resumeItem{Implemented \textbf{MSAL} with \textbf{Entra External ID} and \textbf{Microsoft Graph API} for Azure app discovery, and integrated \textbf{Ping Identity} as an external identity provider for Power Pages authentication flows.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {GlobalLogic India Pvt Ltd}{Feb 2023 -- June 2023}
+    {Software Engineer Trainee}{Noida, Uttar Pradesh}
+    \resumeItemListStart
+      \resumeItem{Contributed to front-end development of enterprise Power Platform modules using \textbf{React.js, TypeScript, and ES6+}, following Microsoft Dataverse and Power Pages conventions.}
+      \resumeItem{Participated in UI code reviews and Agile sprints, optimizing component reusability and improving maintainability by 25\% across delivery cycles.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+      {\textbf{AM Archives} $|$ \emph{Next.js, TypeScript, ShadCn, Tailwind CSS, Firebase Auth, .NET Core, Vercel}}{{\MYhref[blue]{https://github.com/ShivJ11/am-archives}{Github}}}
+      \resumeItemListStart
+        \resumeItem{Designed a \textbf{dynamic, responsive manga reader} with reusable ShadCn and Tailwind components, achieving a \textbf{98\% Lighthouse performance score} and SSR-driven \textbf{40\% lower Time-to-Interactive}.}
+        \resumeItem{Engineered a secure \textbf{.NET Core data proxy} to interact with the MangaDex API, eliminating CORS issues and centralizing auth.}
+      \resumeItemListEnd
+      \vspace{-13pt}
+
+  \resumeProjectHeading
+      {\textbf{Utility Bill Payment System} $|$ \emph{React, .NET Core, Bootstrap, SSMS}}{{\MYhref[blue]{https://github.com/ShivJ11/Utility-Bill-Payment-System}{Github}}}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{React-based bill management dashboard} secured with \textbf{JWT authentication} via .NET Core APIs, sustaining 99.9\% uptime in testing.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \textbf{Power Platform \& D365}{: Power Pages, Power Apps, Power Automate, Copilot Studio, Dataverse, PCF Controls, Liquid, Plugins} \\
+   \textbf{Microsoft Cloud}{: Azure Functions, Azure App Services, Microsoft Graph API, Entra External ID (MSAL), Azure DevOps} \\
+   \textbf{Languages}{: TypeScript, JavaScript (ES6+), C\#, HTML5, CSS3} \\
+   \textbf{Frameworks \& Libraries}{: React, Redux, Context API, Next.js, .NET Core, Fluent UI, Tailwind CSS, Bootstrap} \\
+   \textbf{Tools \& Testing}{: Git, GitHub, Visual Studio, VS Code, Vite, Webpack, Jest, React Testing Library, Ping Identity}
+  }}
+\end{itemize}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Amity University Lucknow}{July 2019 -- June 2023}
+    {Bachelor of Technology in Computer Science}{Noida, Uttar Pradesh}
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications and Achievements}
+\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} \hfill \textbf{Jan 2025} \\
+\textbf{Gem of the Month (x2)} \hfill \textbf{Sept 2024, Mar 2025} \\
+\textbf{Best Team Award for Outstanding Performance} \hfill \textbf{Q1 2025} \\
+\textbf{Internal Azure DevOps Training Completion} \hfill \textbf{2024}
+
+\end{document}
