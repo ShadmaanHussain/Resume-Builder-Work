@@ -77,7 +77,7 @@
     \small \raisebox{-0.1\height}\faPhone\ 8102444245 ~ 
     \MYhref[blue]{mailto:shd.hussain.dev@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shd.hussain.dev@gmail.com}} ~ 
     \MYhref[blue]{https://www.linkedin.com/in/shadmaan-hussain-73075719a/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}  ~
-    \MYhref[blue]{https://github.com/ShadmaanHussain}{\raisebox{-0.2\height}\faGithub\ \underline{Github}}
+    \MYhref[blue]{https://github.com/ShadmaanHussain}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}}
 \end{center}
 
 %-----------SUMMARY-----------
@@ -100,7 +100,7 @@
       \resumeItem{Launched the \textbf{Power Pages community hub} (\textit{community.microsoftbusinessapps.com}) with a custom \textbf{Carousel PCF}; shipped \textbf{Kentucky CHFS} and \textbf{CDPH} D365 portal UIs, \textbf{showcased by Microsoft} in a winning customer demo.}
       \resumeItem{Shipped \textbf{PCF controls} -- \textbf{Carousel}, \textbf{Text-to-Speech}, \textbf{RTO Calendar}, \textbf{PDF Viewer}, and a \textbf{Copilot Studio agent control} on the \textbf{Copilot Client SDK} with \textbf{MSAL} auth -- embedded across Power Pages and a customer-facing \textbf{Canvas app}.}
       \resumeItem{Developed \textbf{C\# .NET Core Web APIs} integrating \textbf{Dataverse}, \textbf{Azure AI Services}, and a \textbf{SQL Data Warehouse} for a custom \textbf{Licensing \& Operations} application.}
-      \resumeItem{Architected an \textbf{Azure Function} bridging the MDA Release Planner with the \textbf{GitHub API} to auto-generate markdown PRs, \textbf{significantly cutting release turnaround time}.}
+      \resumeItem{Architected an \textbf{Azure Function} bridging the MDA Release Planner with the \textbf{GitHub API} to auto-generate Markdown PRs, \textbf{significantly cutting release turnaround time}.}
       \resumeItem{Automated \textbf{Power Automate} workflows syncing \textbf{Azure DevOps} items with \textbf{Dataverse} rate-card tables and orchestrating the \textbf{Copilot Studio Licensing Rate Card} lifecycle.}
       \resumeItem{Designed \textbf{Copilot Studio agents} (Sales Insight with Dataverse knowledge, topics, \textbf{RBAC}, \textbf{custom Client ID/Secret} auth) and a \textbf{content moderation \& relevance plugin} invoking Copilot at runtime.}
       \resumeItem{Built \textbf{MDA} tooling for Microsoft internal teams -- \textbf{validation plugins} for \textbf{Microsoft Fabric} docs review/PR generation, \textbf{RBAC} for Release Planner, and Power Platform Community Site \textbf{Dataverse schema}; integrated \textbf{Entra External ID (MSAL)}, \textbf{Graph API}, and \textbf{Ping Identity} SSO.}
@@ -121,7 +121,7 @@
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-      {\textbf{Utility Bill Payment System} $|$ \emph{React, .NET Core, Bootstrap, SSMS}}{{\MYhref[blue]{https://github.com/ShivJ11/Utility-Bill-Payment-System}{Github}}}
+      {\textbf{Utility Bill Payment System} $|$ \emph{React, .NET Core, Bootstrap, SSMS}}{{\MYhref[blue]{https://github.com/ShivJ11/Utility-Bill-Payment-System}{GitHub}}}
       \resumeItemListStart
         \resumeItem{Developed a \textbf{React-based bill management dashboard} secured with \textbf{JWT authentication} via .NET Core APIs, sustaining 99.9\% uptime in testing.}
       \resumeItemListEnd
@@ -133,7 +133,7 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-   \textbf{Power Platform \& D365}{: Power Pages, Power Apps (MDA \& Canvas), Power Automate, Copilot Studio, Dataverse, PCF, Liquid, Plugins} \\
+   \textbf{Power Platform \& D365}{: Power Pages, Power Apps (Model-Driven Apps \& Canvas), Power Automate, Copilot Studio, Dataverse, PCF, Liquid, Plugins} \\
    \textbf{Microsoft Cloud}{: Azure Functions, App Services, Azure AI Services, Graph API, Entra External ID (MSAL), Azure DevOps, SQL Data Warehouse} \\
    \textbf{Languages \& Frameworks}{: TypeScript, JavaScript (ES6+), C\#, SQL, HTML5, CSS3, React, Redux, Next.js, .NET Core, Fluent UI, Tailwind CSS} \\
    \textbf{Tools \& Testing}{: Git, GitHub, Visual Studio, VS Code, Vite, Webpack, Jest, React Testing Library, Copilot Client SDK, Ping Identity}

@@ -1,0 +1,28 @@
+Microsoft Engineering Work
+
+    - Neptune Managed Platform Operations (aka.ms/Neptune)
+        - Contributed to full-stack development of a Microsoft-internal license management platform, delivering both UI enhancements and backend API features that improved operational efficiency for license tracking.
+        - Designed and implemented multiple Power Automate flows to automate the rate card workflow process, reducing manual effort and improving process reliability.
+        - App Url - aka.ms/neptune
+
+    - PPAC (Power Platform Admin Center)
+        - Enhanced the Power Apps licensing screen to improve visibility into license consumption across the tenant, enabling admins to make more informed licensing decisions.
+        - Implemented a CSV report download feature that allows tenant administrators to export detailed license consumption data across multiple license types, streamlining auditing and reporting workflows.
+        - Integrated multiple recommendation panels into the PPAC experience, surfacing actionable insights to guide administrators toward optimal configurations.
+
+    - Copilot PCF Control
+        - Architected and developed a custom PCF (PowerApps Component Framework) control to embed a Copilot Studio agent within Canvas Apps, leveraging MSAL-based authentication for secure, identity-aware interactions.
+        - Extended the control with Text-to-Speech (TTS) capability, enabling voice-driven interaction with the Copilot agent and enhancing accessibility and user experience.
+        - Integrated the control into a Canvas App, contributing to a customer demo for a client in the supply chain industry that was delivered by Microsoft FTEs, showcasing Microsoft's AI-powered extensibility story.
+
+POC / GL Internal Work
+
+    - Sales Insight Application
+        - Integrated a Copilot Studio agent into the Sales Insight application (built on Power Pages) using a custom PCF control, bridging AI capabilities with the existing sales workflow.
+        - Designed and implemented multiple conversation topics for the Copilot agent, improving response accuracy and delivering a more contextual and reliable experience for end users.
+
+Self Learning
+
+Challenges Faced
+
+    - Authentication for Copilot Studio PCF Integration: Navigated complex authentication challenges when enabling a custom PCF control to access Copilot Studio capabilities such as knowledge sources. Conducted deep research into available authentication modes, evaluating compatibility across channels to identify the configuration that best met our security and functional requirements for the custom app integration.
