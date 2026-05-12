@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { activeResume } from '@/config/variant';
 import { SectionHeading } from '@/components/SectionHeading';
+import { InteractiveCard } from '@/components/InteractiveCard';
 
 export function Skills() {
   const { skills } = activeResume;
@@ -9,6 +10,7 @@ export function Skills() {
     <section id="skills" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
+          index="04"
           eyebrow="Skills"
           title="My toolbox"
           subtitle="Languages, frameworks, and platforms I work with day-to-day."
@@ -22,8 +24,8 @@ export function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.5, delay: gi * 0.05 }}
-              className="rounded-2xl glass p-6 sm:p-7"
             >
+              <InteractiveCard tilt={5} className="rounded-2xl glass p-6 sm:p-7">
               <h3 className="font-display text-lg font-semibold mb-4 flex items-center gap-3">
                 <span
                   className="inline-block h-2 w-2 rounded-full"
@@ -53,6 +55,7 @@ export function Skills() {
                   </motion.span>
                 ))}
               </div>
+              </InteractiveCard>
             </motion.div>
           ))}
         </div>

@@ -48,11 +48,26 @@ const config: Config = {
           '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
           '50%': { transform: 'translate(20px, 20px) scale(0.95)' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'spin-slow': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
       },
       animation: {
         'aurora-1': 'aurora-1 18s ease-in-out infinite',
         'aurora-2': 'aurora-2 22s ease-in-out infinite',
         'aurora-3': 'aurora-3 26s ease-in-out infinite',
+        marquee: 'marquee 38s linear infinite',
+        'spin-slow': 'spin-slow 24s linear infinite',
+        shimmer: 'shimmer 6s linear infinite',
       },
     },
   },

@@ -2,6 +2,7 @@ import { motion, useInView, useMotionValue, useSpring, useTransform } from 'fram
 import { useEffect, useRef } from 'react';
 import { activeResume } from '@/config/variant';
 import { SectionHeading } from '@/components/SectionHeading';
+import { InteractiveCard } from '@/components/InteractiveCard';
 
 function StatCounter({ value, label }: { value: string; label: string }) {
   // Try to parse a leading numeric portion (e.g. "2+" or "$1M+")
@@ -17,23 +18,22 @@ function StatCounter({ value, label }: { value: string; label: string }) {
   }, [inView, mv, match]);
 
   return (
-    <div
-      ref={ref}
-      className="rounded-2xl glass p-5 hover:-translate-y-1 transition-transform duration-300"
-    >
-      <div className="font-display text-3xl sm:text-4xl font-bold gradient-text">
-        {match ? (
-          <span>
-            {match[1]}
-            <motion.span>{display}</motion.span>
-            {match[3]}
-          </span>
-        ) : (
-          value
-        )}
+    <InteractiveCard tilt={8} className="rounded-2xl glass p-5">
+      <div ref={ref}>
+        <div className="font-display text-3xl sm:text-4xl font-bold gradient-text">
+          {match ? (
+            <span>
+              {match[1]}
+              <motion.span>{display}</motion.span>
+              {match[3]}
+            </span>
+          ) : (
+            value
+          )}
+        </div>
+        <div className="mt-1 text-xs sm:text-sm text-muted-foreground">{label}</div>
       </div>
-      <div className="mt-1 text-xs sm:text-sm text-muted-foreground">{label}</div>
-    </div>
+    </InteractiveCard>
   );
 }
 
@@ -50,6 +50,7 @@ export function About() {
     <section id="about" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
+          index="02"
           eyebrow="About"
           title="A quick introduction"
           subtitle={about}

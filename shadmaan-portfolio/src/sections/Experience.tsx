@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
 import { activeResume } from '@/config/variant';
 import { SectionHeading } from '@/components/SectionHeading';
+import { InteractiveCard } from '@/components/InteractiveCard';
 
 export function Experience() {
   const { experience } = activeResume;
@@ -10,6 +11,7 @@ export function Experience() {
     <section id="experience" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
+          index="03"
           eyebrow="Experience"
           title="Where I've been building"
           subtitle="Production work shipped with Microsoft engineering teams and enterprise customers."
@@ -51,7 +53,10 @@ export function Experience() {
                         : 'sm:col-start-2 sm:pl-10 pl-12'
                     }
                   >
-                    <div className="rounded-2xl glass p-6 sm:p-7 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300">
+                    <InteractiveCard
+                      tilt={4}
+                      className="rounded-2xl glass p-6 sm:p-7 hover:shadow-xl hover:shadow-primary/10 transition-shadow duration-300"
+                    >
                       <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                         <Briefcase className="h-3.5 w-3.5" />
                         {item.period}
@@ -83,7 +88,7 @@ export function Experience() {
                           </li>
                         ))}
                       </ul>
-                    </div>
+                    </InteractiveCard>
                   </div>
                 </motion.div>
               );

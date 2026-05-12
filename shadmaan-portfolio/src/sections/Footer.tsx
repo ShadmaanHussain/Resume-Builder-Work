@@ -30,6 +30,7 @@ export function Footer() {
     <footer id="contact" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
+          index="05"
           eyebrow="Contact"
           title="Let's build something."
           subtitle="Open to roles, collaborations, and interesting problems. The fastest way to reach me is below."

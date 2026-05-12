@@ -81,3 +81,22 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Custom cursor: hide native cursor on devices with a fine pointer
+   (the CursorGlow component renders its own dot + glow). */
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html:not(.no-custom-cursor),
+  html:not(.no-custom-cursor) body,
+  html:not(.no-custom-cursor) a,
+  html:not(.no-custom-cursor) button,
+  html:not(.no-custom-cursor) [role='button'] {
+    cursor: none;
+  }
+  /* Re-enable a usable caret inside text inputs. */
+  html:not(.no-custom-cursor) input,
+  html:not(.no-custom-cursor) textarea,
+  html:not(.no-custom-cursor) select,
+  html:not(.no-custom-cursor) [contenteditable='true'] {
+    cursor: text;
+  }
+}

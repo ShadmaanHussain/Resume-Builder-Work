@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { Navbar } from '@/components/Navbar';
 import { AnimatedBackground } from '@/components/AnimatedBackground';
+import { CursorGlow } from '@/components/CursorGlow';
+import { KeyboardShortcuts } from '@/components/KeyboardShortcuts';
 import { Hero } from '@/sections/Hero';
 import { About } from '@/sections/About';
 import { Experience } from '@/sections/Experience';
@@ -16,6 +18,7 @@ export default function App() {
   return (
     <>
       <AnimatedBackground />
+      <CursorGlow />
       <Navbar />
       <main>
         <Hero />
@@ -24,6 +27,7 @@ export default function App() {
         <Skills />
         <Footer />
       </main>
+      <KeyboardShortcuts />
     </>
   );
 }

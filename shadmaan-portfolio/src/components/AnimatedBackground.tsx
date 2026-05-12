@@ -1,6 +1,17 @@
-import { motion } from 'framer-motion';
+import { motion, useTransform } from 'framer-motion';
+import { useMousePosition } from '@/hooks/useMousePosition';
 
 export function AnimatedBackground() {
+  const { nx, ny } = useMousePosition();
+
+  // Each blob parallaxes by a different amount for depth.
+  const x1 = useTransform(nx, (v) => v * 60);
+  const y1 = useTransform(ny, (v) => v * 60);
+  const x2 = useTransform(nx, (v) => v * -90);
+  const y2 = useTransform(ny, (v) => v * -50);
+  const x3 = useTransform(nx, (v) => v * 40);
+  const y3 = useTransform(ny, (v) => v * -70);
+
   return (
     <div
       aria-hidden
@@ -18,28 +29,43 @@ export function AnimatedBackground() {
         }}
       />
 
-      {/* Aurora blobs */}
+      {/* Aurora blobs (parallax with cursor) */}
       <motion.div
-        className="absolute -top-40 -left-40 h-[36rem] w-[36rem] rounded-full blur-3xl opacity-50 dark:opacity-40 animate-aurora-1"
-        style={{
-          background:
-            'radial-gradient(circle at center, hsl(var(--primary) / 0.55), transparent 65%)',
-        }}
-      />
+        style={{ x: x1, y: y1 }}
+        className="absolute -top-40 -left-40 h-[36rem] w-[36rem] rounded-full blur-3xl opacity-50 dark:opacity-40 animate-aurora-1 will-change-transform"
+      >
+        <div
+          className="h-full w-full rounded-full"
+          style={{
+            background:
+              'radial-gradient(circle at center, hsl(var(--primary) / 0.55), transparent 65%)',
+          }}
+        />
+      </motion.div>
       <motion.div
-        className="absolute top-1/3 -right-40 h-[40rem] w-[40rem] rounded-full blur-3xl opacity-50 dark:opacity-40 animate-aurora-2"
-        style={{
-          background:
-            'radial-gradient(circle at center, hsl(var(--accent) / 0.55), transparent 65%)',
-        }}
-      />
+        style={{ x: x2, y: y2 }}
+        className="absolute top-1/3 -right-40 h-[40rem] w-[40rem] rounded-full blur-3xl opacity-50 dark:opacity-40 animate-aurora-2 will-change-transform"
+      >
+        <div
+          className="h-full w-full rounded-full"
+          style={{
+            background:
+              'radial-gradient(circle at center, hsl(var(--accent) / 0.55), transparent 65%)',
+          }}
+        />
+      </motion.div>
       <motion.div
-        className="absolute bottom-0 left-1/3 h-[32rem] w-[32rem] rounded-full blur-3xl opacity-40 dark:opacity-30 animate-aurora-3"
-        style={{
-          background:
-            'radial-gradient(circle at center, hsl(200 95% 60% / 0.45), transparent 65%)',
-        }}
-      />
+        style={{ x: x3, y: y3 }}
+        className="absolute bottom-0 left-1/3 h-[32rem] w-[32rem] rounded-full blur-3xl opacity-40 dark:opacity-30 animate-aurora-3 will-change-transform"
+      >
+        <div
+          className="h-full w-full rounded-full"
+          style={{
+            background:
+              'radial-gradient(circle at center, hsl(200 95% 60% / 0.45), transparent 65%)',
+          }}
+        />
+      </motion.div>
     </div>
   );
 }
