@@ -1,0 +1,158 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}
+
+%-------------------------------------------
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Shadmaan Hussain} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 8102444245 ~
+    \MYhref[blue]{mailto:shd.hussain.dev@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shd.hussain.dev@gmail.com}} ~
+    \MYhref[blue]{https://www.linkedin.com/in/shadmaan-hussain-73075719a/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}  ~
+    \MYhref[blue]{https://github.com/ShadmaanHussain}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {GlobalLogic (Hitachi Group)}{Feb 2023 -- Present}
+    {Software Engineer}{Noida, India}
+    \resumeItemListStart
+      \resumeItem{Owned end-to-end design of a \textbf{licensing analytics platform} -- \textbf{C\# .NET Core REST APIs} with \textbf{SQL Data Warehouse} and a \textbf{React/TypeScript} SPA -- surfacing real-time license consumption data and a \textbf{12-month CSV export} for \textbf{10K+ enterprise tenants}, directly enabling revenue reconciliation.}
+      \resumeItem{Designed and shipped \textbf{3 serverless microservices} using \textbf{Azure Functions} (HTTP + event triggers); built an automated PR generation service consuming the \textbf{GitHub REST API}, reducing manual release documentation effort by \textbf{60\%}.}
+      \resumeItem{Implemented \textbf{OAuth 2.0 / OIDC authentication} (MSAL + SAML SSO) and \textbf{role-based access control} across \textbf{4 services}; handled token refresh, scope validation, and session management with \textbf{zero auth-related production incidents} over 12 months.}
+      \resumeItem{Built \textbf{React dashboards} rendering large datasets using \textbf{pagination}, \textbf{code splitting}, and \textbf{lazy-loaded routes}; reduced initial \textbf{bundle size by 35\%} via tree-shaking and dynamic imports, improving page load times across the application.}
+      \resumeItem{Developed \textbf{5 reusable React/TypeScript component libraries} with \textbf{unit tests} (Jest + RTL); adopted across \textbf{3 product teams}, eliminating \textbf{40\% duplicate code} and establishing a shared component design system.}
+      \resumeItem{Optimized \textbf{SQL Data Warehouse queries} -- added covering indexes, eliminated N+1 patterns with batch fetches, and introduced in-memory caching for frequent reads; reduced average API response times by \textbf{3--4x} on key endpoints.}
+      \resumeItem{Configured \textbf{CI/CD pipelines} in Azure DevOps with automated test gates, linting, and staged deployments (dev $\rightarrow$ staging $\rightarrow$ prod); increased deployment cadence from bi-weekly to \textbf{multiple times per week}.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+      {\textbf{Real-Time Notification Service} $|$ \emph{C\# .NET Core, SignalR, Redis, Docker, React}}{{\MYhref[blue]{https://github.com/ShadmaanHussain}{GitHub}}}
+      \resumeItemListStart
+        \resumeItem{Built a \textbf{pub/sub notification system} using \textbf{SignalR WebSockets} with \textbf{Redis} as a message backplane; supports multiple concurrent clients with sub-second delivery; containerized with \textbf{Docker Compose} for local multi-instance testing.}
+      \resumeItemListEnd
+      \vspace{-13pt}
+
+  \resumeProjectHeading
+      {\textbf{AM Archives -- Content Aggregator} $|$ \emph{Next.js, TypeScript, C\# .NET Core, Vercel}}{{\MYhref[blue]{https://github.com/ShivJ11/am-archives}{GitHub}}}
+      \resumeItemListStart
+        \resumeItem{Built a \textbf{server-rendered} content platform with \textbf{Next.js ISR} and a \textbf{C\# .NET Core API proxy} handling upstream rate limits and response caching; achieved \textbf{98 Lighthouse performance score} and \textbf{40\% faster TTI} vs client-side rendering.}
+      \resumeItemListEnd
+      \vspace{-13pt}
+
+  \resumeProjectHeading
+      {\textbf{Utility Bill Payment System} $|$ \emph{React, C\# .NET Core Web API, SQL Server, JWT Auth}}{{\MYhref[blue]{https://github.com/ShivJ11/Utility-Bill-Payment-System}{GitHub}}}
+      \resumeItemListStart
+        \resumeItem{Designed a full-stack billing platform with \textbf{JWT-based auth}, \textbf{optimistic UI updates}, and \textbf{transactional SQL queries} ensuring ACID compliance; load-tested to \textbf{500 concurrent users} with \textbf{99.9\% uptime}.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \textbf{Languages}{: C\#, TypeScript, JavaScript (ES6+), SQL, HTML5, CSS3} \\
+   \textbf{Backend}{: .NET Core (Web API), REST APIs, Azure Functions, SignalR, Redis, SQL Server, Entity Framework, Docker} \\
+   \textbf{Frontend}{: React, Next.js, Redux, Context API, Fluent UI, Tailwind CSS, Webpack, Vite, Web Vitals Optimization} \\
+   \textbf{System Design}{: Microservices, Event-Driven Architecture, Pub/Sub, Caching Strategies, Database Indexing, API Gateway} \\
+   \textbf{DevOps \& Tools}{: Azure DevOps (CI/CD), Git, Docker, Application Insights, Jest, React Testing Library, OAuth 2.0/OIDC}
+  }}
+\end{itemize}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Amity University}{July 2019 -- June 2023}
+    {Bachelor of Technology in Computer Science}{Uttar Pradesh, India}
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Achievements}
+\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} \hfill \textbf{2025} \\
+\textbf{Gem of the Month Award (x2)} -- recognized for shipping high-impact features ahead of schedule \hfill \textbf{2024, 2025} \\
+\textbf{Best Team Award} -- led team delivering 0-downtime platform migration \hfill \textbf{Q1 2025}
+
+\end{document}
