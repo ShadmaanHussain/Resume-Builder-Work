@@ -83,7 +83,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{
-Front-End Developer with \textbf{2+ years} at a \textbf{Microsoft engineering partner} specializing in \textbf{React.js, TypeScript, and enterprise UI development}. Delivered production features for \textbf{Microsoft Power Platform}, built \textbf{PCF controls}, integrated the \textbf{Copilot Client SDK} with \textbf{MSAL} authentication, and shipped an end-to-end \textbf{AI chat experience}. Expert in \textbf{component-driven architecture}, responsive design, accessibility-first development, and scalable state management.
+Front-End Developer with \textbf{3+ years} at a \textbf{Microsoft engineering partner} specializing in \textbf{React.js, TypeScript, and enterprise UI development}. Delivered production features for \textbf{Microsoft Power Platform}, built \textbf{PCF controls}, integrated the \textbf{Copilot Client SDK} with \textbf{MSAL} authentication, and shipped an end-to-end \textbf{AI chat experience}. Expert in \textbf{component-driven architecture}, responsive design, accessibility-first development, and scalable state management.
 }
 \vspace{-8pt}
 

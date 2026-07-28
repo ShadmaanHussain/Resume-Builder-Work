@@ -7,7 +7,7 @@ export const fullstackData: ResumeData = {
   tagline: 'C# .NET Core • React / TypeScript • Azure',
   pageTitle: 'Shadmaan Hussain — Full Stack Engineer',
   summary:
-    'Full Stack Software Engineer with 2+ years at a Microsoft engineering partner, specializing in C# .NET Core Web APIs and React/TypeScript front-end development. Delivered production full-stack systems for Microsoft Power Platform — RESTful APIs backed by SQL Data Warehouse, serverless Azure Functions, and enterprise React dashboards.',
+    'Full Stack Software Engineer with 3+ years at a Microsoft engineering partner, specializing in C# .NET Core Web APIs and React/TypeScript front-end development. Delivered production full-stack systems for Microsoft Power Platform — RESTful APIs backed by SQL Data Warehouse, serverless Azure Functions, and enterprise React dashboards.',
   about:
     'I build end-to-end web platforms — designing typed REST APIs, wiring them up to relational data warehouses, and shipping polished React/TypeScript front-ends on top. My day-to-day blends backend services, serverless microservices, identity (MSAL / Entra External ID), and modern UI work with Fluent UI and Tailwind.',
   contact: {
@@ -18,7 +18,7 @@ export const fullstackData: ResumeData = {
     location: 'Noida, Uttar Pradesh, India',
   },
   stats: [
-    { label: 'Years of experience', value: '2+' },
+    { label: 'Years of experience', value: '3+' },
     { label: 'Production PCF controls', value: '5' },
     { label: 'Revenue leakage prevented', value: '$1M+' },
     { label: 'Microsoft certifications', value: 'AZ-900' },

@@ -83,7 +83,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{
-\textbf{C\# / .NET Core Software Engineer} with \textbf{2+ years} building production backend systems at a \textbf{Microsoft engineering partner}. Specialize in \textbf{C\# .NET Core Web APIs}, \textbf{serverless Azure Functions}, \textbf{SQL Data Warehouse}, and \textbf{REST microservices}, with \textbf{React/TypeScript} for end-to-end delivery. Hands-on with \textbf{clean/layered architecture}, \textbf{dependency injection}, \textbf{async/await}, \textbf{Entity Framework}, \textbf{MSAL / OAuth 2.0} auth, and \textbf{Azure DevOps} CI/CD.
+\textbf{C\# / .NET Core Software Engineer} with \textbf{3+ years} building production backend systems at a \textbf{Microsoft engineering partner}. Specialize in \textbf{C\# .NET Core Web APIs}, \textbf{serverless Azure Functions}, \textbf{SQL Data Warehouse}, and \textbf{REST microservices}, with \textbf{React/TypeScript} for end-to-end delivery. Hands-on with \textbf{clean/layered architecture}, \textbf{dependency injection}, \textbf{async/await}, \textbf{Entity Framework}, \textbf{MSAL / OAuth 2.0} auth, and \textbf{Azure DevOps} CI/CD.
 }
 \vspace{-8pt}
 

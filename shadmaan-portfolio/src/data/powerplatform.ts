@@ -7,7 +7,7 @@ export const powerplatformData: ResumeData = {
   tagline: 'Power Pages • PCF • Copilot Studio • Dataverse',
   pageTitle: 'Shadmaan Hussain — Power Platform Developer',
   summary:
-    'Dynamics 365 & Power Platform Developer with 2+ years shipping production Power Pages portals, PCF controls, Copilot Studio agents, D365 plugins, Power Automate workflows, and .NET Core Web APIs for Microsoft internal teams and enterprise customers. Hands-on across Dataverse, MSAL/Entra External ID, and Azure Functions, with deep front-end expertise in React, TypeScript, and PCF.',
+    'Dynamics 365 & Power Platform Developer with 3+ years shipping production Power Pages portals, PCF controls, Copilot Studio agents, D365 plugins, Power Automate workflows, and .NET Core Web APIs for Microsoft internal teams and enterprise customers. Hands-on across Dataverse, MSAL/Entra External ID, and Azure Functions, with deep front-end expertise in React, TypeScript, and PCF.',
   about:
     'I design and ship Power Platform experiences end-to-end — from PCF controls and Power Pages portals to Copilot Studio agents, Dataverse schemas, and the .NET Core / Azure services that back them. I work directly with Microsoft engineering teams on Dynamics 365 customer scenarios.',
   contact: {
@@ -18,7 +18,7 @@ export const powerplatformData: ResumeData = {
     location: 'Noida, Uttar Pradesh, India',
   },
   stats: [
-    { label: 'Years of experience', value: '2+' },
+    { label: 'Years of experience', value: '3+' },
     { label: 'Production PCF controls', value: '5' },
     { label: 'Revenue leakage prevented', value: '$1M+' },
     { label: 'Live Microsoft templates', value: '1' },

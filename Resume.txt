@@ -83,7 +83,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{
-Front-End Developer with \textbf{2+ years of professional experience} specializing in \textbf{React.js, TypeScript, and modern UI development}. Skilled in building \textbf{responsive, high-performance, and accessible web applications} aligned with enterprise standards. Experienced in \textbf{component-driven architecture}, state management, and collaboration with cross-functional teams to deliver scalable, maintainable, and user-centric solutions.
+Front-End Developer with \textbf{3+ years of professional experience} specializing in \textbf{React.js, TypeScript, and modern UI development}. Skilled in building \textbf{responsive, high-performance, and accessible web applications} aligned with enterprise standards. Experienced in \textbf{component-driven architecture}, state management, and collaboration with cross-functional teams to deliver scalable, maintainable, and user-centric solutions.
 }
 \vspace{-8pt}
 

@@ -83,7 +83,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{
-\textbf{Dynamics 365 \& Power Platform Developer} with \textbf{2+ years} shipping production \textbf{Power Pages portals, PCF controls, Copilot Studio Agents, D365 Plugins, Power Automate workflows, and .NET Core Web APIs} for Microsoft internal teams and enterprise customers. Hands-on across \textbf{Dataverse, MSAL/Entra External ID, and Azure Functions}, with deep front-end expertise in \textbf{React, TypeScript, and PCF}.
+\textbf{Dynamics 365 \& Power Platform Developer} with \textbf{3+ years} shipping production \textbf{Power Pages portals, PCF controls, Copilot Studio Agents, D365 Plugins, Power Automate workflows, and .NET Core Web APIs} for Microsoft internal teams and enterprise customers. Hands-on across \textbf{Dataverse, MSAL/Entra External ID, and Azure Functions}, with deep front-end expertise in \textbf{React, TypeScript, and PCF}.
 }
 \vspace{-8pt}
 
