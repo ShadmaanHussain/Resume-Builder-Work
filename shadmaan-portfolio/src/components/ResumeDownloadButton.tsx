@@ -14,12 +14,14 @@ export function ResumeDownloadButton({
   variant = 'solid',
   label = 'Download Resume',
 }: Props) {
-  const fileName = activeResume.resumePdfPath.split('/').pop() ?? 'resume.pdf';
+  const pdfPath = activeResume.resumePdfPath.replace(/^\//, '');
+  const href = import.meta.env.BASE_URL + pdfPath;
+  const fileName = pdfPath.split('/').pop() ?? 'resume.pdf';
   const isSolid = variant === 'solid';
 
   return (
     <motion.a
-      href={activeResume.resumePdfPath}
+      href={href}
       download={fileName}
       whileHover={{ y: -2 }}
       whileTap={{ scale: 0.97 }}
