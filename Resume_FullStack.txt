@@ -83,7 +83,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{
-\textbf{C\# / .NET Core Software Engineer} with \textbf{3+ years} building production backend systems at a \textbf{Microsoft engineering partner}. Specialize in \textbf{C\# .NET Core Web APIs}, \textbf{serverless Azure Functions}, \textbf{SQL Data Warehouse}, and \textbf{REST microservices}, with \textbf{React/TypeScript} for end-to-end delivery. Hands-on with \textbf{clean/layered architecture}, \textbf{dependency injection}, \textbf{async/await}, \textbf{Entity Framework}, \textbf{MSAL / OAuth 2.0} auth, and \textbf{Azure DevOps} CI/CD.
+\textbf{C\# / .NET Core Software Engineer} with \textbf{3+ years} building backend systems at a \textbf{Microsoft engineering partner}. Specialize in \textbf{C\# .NET Core Web APIs}, \textbf{serverless Azure Functions}, \textbf{SQL Data Warehouse}, and \textbf{REST microservices}, with \textbf{React/TypeScript} delivery. Hands-on with \textbf{layered architecture}, \textbf{async/await}, \textbf{Entity Framework}, and \textbf{Azure DevOps} CI/CD.
 }
 \vspace{-8pt}
 
@@ -92,16 +92,23 @@
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {GlobalLogic India Pvt Ltd}{Feb 2023 -- Present}
-    {Software Engineer (Software Engineer Trainee, Feb -- Jun 2023)}{Noida, Uttar Pradesh}
+    {GlobalLogic India Pvt Ltd}{Jun 2023 -- Present}
+    {Software Engineer}{Noida, Uttar Pradesh}
     \resumeItemListStart
-      \resumeItem{Architected the \textbf{licensing analytics backend} for an internal Microsoft engineering platform -- \textbf{C\# .NET Core REST APIs} with a \textbf{layered architecture} (controllers, services, repositories) and \textbf{dependency-injected} domain services backed by \textbf{SQL Data Warehouse} -- powering real-time consumption tracking and a \textbf{12-month CSV export} for enterprise tenants.}
-      \resumeItem{Designed and shipped multiple \textbf{Azure Functions} as \textbf{serverless microservices} (HTTP and timer triggers), including a \textbf{GitHub REST API} integration that auto-generates Markdown PRs from release-planner data, eliminating manual documentation effort.}
-      \resumeItem{Authored production \textbf{C\# server-side validation plugins} executed in a hosted runtime to enforce business rules on a Microsoft documentation review pipeline, \textbf{significantly cutting release turnaround time}.}
-      \resumeItem{Built secure \textbf{C\# .NET Core Web APIs} using \textbf{async/await}, middleware-based logging, and \textbf{Entity Framework}; secured endpoints with \textbf{MSAL (Entra External ID)}, \textbf{OAuth 2.0 / OIDC}, \textbf{Graph API}, and \textbf{Ping Identity SSO} with end-to-end \textbf{RBAC} and zero auth-related production incidents.}
-      \resumeItem{Tuned \textbf{SQL Data Warehouse} access by adding covering indexes, batching reads to eliminate \textbf{N+1} patterns, and introducing in-memory caching for hot reads -- \textbf{reducing average API latency 3--4x} on key endpoints.}
-      \resumeItem{Configured \textbf{Azure DevOps} CI/CD pipelines for .NET services with build, lint, automated test gates, and staged dev / staging / prod deployments; \textbf{raised deployment cadence from bi-weekly to multiple times per week}.}
-      \resumeItem{Delivered \textbf{React / TypeScript} dashboards consuming the .NET APIs and an in-app \textbf{AI chatbot} powered by the \textbf{Copilot Client SDK}; authored a reusable component library, \textbf{reducing UI duplication across 3+ enterprise projects}.}
+      \resumeItem{Architected the \textbf{licensing analytics backend} for an internal Microsoft platform -- \textbf{C\# .NET Core REST APIs} with a \textbf{layered architecture} and \textbf{dependency-injected} services on \textbf{SQL Data Warehouse} -- powering real-time tracking and \textbf{12-month CSV exports}.}
+      \resumeItem{Shipped multiple \textbf{Azure Functions} as \textbf{serverless microservices} (HTTP and timer triggers), including a \textbf{GitHub REST API} integration auto-generating Markdown PRs.}
+      \resumeItem{Built secure \textbf{C\# .NET Core Web APIs} with \textbf{async/await} and \textbf{Entity Framework}; secured endpoints via \textbf{MSAL (Entra External ID)}, \textbf{OAuth 2.0 / OIDC}, \textbf{Graph API}, and \textbf{Ping Identity SSO} with \textbf{RBAC}.}
+      \resumeItem{Tuned \textbf{SQL Data Warehouse} access with covering indexes, batched reads to eliminate \textbf{N+1} patterns, and caching -- \textbf{reducing average API latency 3--4x}.}
+      \resumeItem{Configured \textbf{Azure DevOps} CI/CD pipelines for .NET with automated build/test gates; \textbf{raised deployment cadence from bi-weekly to several times weekly}.}
+      \resumeItem{Delivered \textbf{React / TypeScript} dashboards on the .NET APIs; built a reusable component library \textbf{cutting UI duplication across 3+ projects}.}
+      \resumeItem{Built an in-app \textbf{AI assistant} on the \textbf{Copilot Client SDK} with \textbf{GitHub Copilot} and \textbf{Claude}, applying \textbf{prompt engineering} and \textbf{context grounding} over internal docs; used \textbf{AI-assisted development} for scaffolding/tests, \textbf{accelerating delivery}.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {GlobalLogic India Pvt Ltd}{Feb 2023 -- Jun 2023}
+    {Software Engineer Trainee}{Noida, Uttar Pradesh}
+    \resumeItemListStart
+      \resumeItem{Authored production \textbf{C\# server-side validation plugins} enforcing business rules on a Microsoft docs review pipeline, \textbf{cutting release turnaround time}.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -114,14 +121,14 @@
   \resumeProjectHeading
       {\textbf{Utility Bill Payment System} $|$ \emph{C\# .NET Core Web API, SQL Server, Entity Framework, JWT, React}}{{\MYhref[blue]{https://github.com/ShivJ11/Utility-Bill-Payment-System}{GitHub}}}
       \resumeItemListStart
-        \resumeItem{Built a \textbf{C\# .NET Core REST API} backed by \textbf{SQL Server} with a \textbf{layered architecture} (controllers / services / repositories), \textbf{Entity Framework} data access, \textbf{JWT} auth, and transactional endpoints ensuring \textbf{ACID} compliance; paired with a \textbf{React} dashboard; sustained \textbf{99.9\% uptime} during load testing.}
+        \resumeItem{Built a \textbf{C\# .NET Core REST API} on \textbf{SQL Server} with a \textbf{layered architecture}, \textbf{Entity Framework}, \textbf{JWT} auth, and \textbf{ACID}-compliant endpoints; paired with a \textbf{React} dashboard; sustained \textbf{99.9\% uptime}.}
       \resumeItemListEnd
       \vspace{-13pt}
 
   \resumeProjectHeading
       {\textbf{AM Archives} $|$ \emph{C\# .NET Core, Next.js, TypeScript, Tailwind CSS, Firebase Auth, Vercel}}{{\MYhref[blue]{https://github.com/ShivJ11/am-archives}{GitHub}}}
       \resumeItemListStart
-        \resumeItem{Engineered a \textbf{C\# .NET Core} API proxy securely consuming an upstream REST API with \textbf{response caching} and \textbf{rate-limit handling}; \textbf{Next.js SSR} front-end achieved a \textbf{98\% Lighthouse score} and \textbf{40\% faster Time-to-Interactive}.}
+        \resumeItem{Engineered a \textbf{C\# .NET Core} API proxy over a REST API with \textbf{response caching} and \textbf{rate-limit handling}; \textbf{Next.js SSR} front-end scored \textbf{98\% Lighthouse} and \textbf{40\% faster Time-to-Interactive}.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -132,10 +139,11 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
    \textbf{Languages}{: C\#, TypeScript, JavaScript (ES6+), SQL (T-SQL), HTML5, CSS3} \\
-   \textbf{Backend}{: .NET Core (Web API), ASP.NET Core, REST APIs, Azure Functions (Serverless Microservices), Entity Framework, LINQ, Dependency Injection, Middleware, Async/Await} \\
+   \textbf{Backend}{: .NET Core (Web API), ASP.NET Core, REST APIs, Azure Functions (Serverless Microservices), Entity Framework, LINQ, Dependency Injection, Async/Await} \\
    \textbf{Data \& Cloud}{: SQL Server, SQL Data Warehouse, Stored Procedures, Indexing \& Query Optimization, Azure App Services, Azure AI Services, Application Insights} \\
    \textbf{Auth \& Security}{: MSAL / Entra ID, OAuth 2.0, OIDC, JWT, RBAC, Graph API, Ping Identity SSO} \\
    \textbf{Frontend}{: React, TypeScript, Redux, Context API, Next.js, Fluent UI, Tailwind CSS, Bootstrap} \\
+   \textbf{AI Engineering}{: GitHub Copilot, Claude, LLM Integration, Prompt Engineering, Context Grounding, Azure OpenAI} \\
    \textbf{DevOps \& Tools}{: Azure DevOps (CI/CD), Git, GitHub, Visual Studio, VS Code, Postman, Vite, Webpack, Jest, React Testing Library}
   }}
 \end{itemize}
@@ -154,7 +162,6 @@
 \section{Certifications and Achievements}
 \textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} \hfill \textbf{Jan 2025} \\
 \textbf{Gem of the Month (x2)} \hfill \textbf{Sept 2024, Mar 2025} \\
-\textbf{Best Team Award for Outstanding Performance} \hfill \textbf{Q1 2025} \\
-\textbf{Internal Azure DevOps Training Completion} \hfill \textbf{2024}
+\textbf{Best Team Award for Outstanding Performance} \hfill \textbf{Q1 2025}
 
 \end{document}
